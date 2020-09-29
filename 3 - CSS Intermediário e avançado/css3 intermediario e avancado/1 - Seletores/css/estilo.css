@@ -1,0 +1,31 @@
+/*Seletor de classe:*/
+/*aplica o estilo apenas na propriedade selecionada:*/
+
+p.verde { /*Esses estilos, neste caso, só vão funcionar se aplicada em elemento de parágrafo*/
+	color: green;
+}
+
+/*Seletor de filho*/
+
+li>a { /*Só vai aplicar as prorpriedades em links <a> que sejam filho DIRETO de li, ou seja, que estejam dentro de uma li*/
+	color: red;
+	text-decoration: none;
+}
+
+/*Seletor de descendente*/
+/*Mesma coisa que o filho, mas n precisa der filho direto*/
+p a {
+	color:green;
+	text-decoration: none;
+}
+
+/*Seletor de irmão adjacente*/
+/*h1 + p : Seleciona o primeiro <p> que houver DEPOIS (n dentro) de um h1, mas somente o primeiro - precisa ser o elemento diretamente precedente */
+
+h1+p {
+	color:red;
+}
+/*Seleciona todos os p que vierem dps do h1*/
+h1~p {
+	color:red;
+}

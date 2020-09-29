@@ -1,0 +1,3 @@
+Fontes:
+- Tamanho padrão de textos é de 16px;
+- "1em" quer izer 1x o tamanho do bloco pai

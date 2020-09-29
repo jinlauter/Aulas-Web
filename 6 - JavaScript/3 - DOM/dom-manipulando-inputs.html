@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="pt-br">
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <title>JavaScript</title>
+    
+  </head>
+  <script>
+    function verifica () {
+      var caracter = document.getElementById('caracter_inicial').value
+      document.getElementById('caracter_inicial').value = ''
+      
+      switch(caracter) {
+        case '0':
+        case '1':
+        case '2':
+        case '3':
+        case '4':
+        case '5':
+        case '6':
+        case '7':
+        case '8':
+        case '9':
+          document.getElementById('numero').value = document.getElementById('numero').value + " " + caracter
+          break;
+        default:
+          document.getElementById('caracter').value = document.getElementById('caracter').value + " " + caracter
+      }
+
+    }
+  </script>
+
+  <!-- onresize: aciona qdo muda o tamanho da janela -->
+  <body>
+
+    <input
+      onkeyup="verifica()" 
+      type="text" 
+      placeholder = "Digite um caracter aqui"
+      id="caracter_inicial"
+    />
+
+    <hr />
+    <br><br>
+
+    
+    <span>Letra:</span>
+    <input  
+      type="text" 
+      id="caracter"
+      disabled="disabled" 
+    >
+    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+    <span>Número:</span>
+    <input 
+      type="text" 
+      id="numero"
+      disabled="disabled" 
+    >
+
+    <script>
+      //console.log(document.getElementById('nome_usuario'))
+      console.log(document.getElementsByTagName('input'))
+    </script>
+
+    
+
+  
+   
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   <!--  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js""></script> -->
+  </body>
+</html>

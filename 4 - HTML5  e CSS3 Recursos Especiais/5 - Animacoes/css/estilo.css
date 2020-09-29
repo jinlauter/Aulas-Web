@@ -1,0 +1,58 @@
+@keyframes animacao-caixa {
+	from {
+		background: red;
+		border-radius: 0px;
+		top: 0;
+		left: 0;
+	}
+	to {
+		background: green;
+		border-radius: 150px;
+		top: 200px;
+		left: 200px;
+	}
+}
+
+@-moz-keyframes animacao-caixa {
+	from {
+		background: red;
+	}
+	to {
+		background: green;
+	}
+}
+
+@-o-keyframes animacao-caixa {
+	from {
+		background: red;
+	}
+	to {
+		background: green;
+	}
+}
+
+@-webkit-keyframes animacao-caixa {
+	from {
+		background: red;
+	}
+	to {
+		background: green;
+	}
+}
+
+#caixa {
+	width: 300px;
+	height: 300px;
+	position: relative;
+	/*background: red;
+	animation-name: animacao-caixa;
+	animation-duration: 4s; */
+	/*animation-delay: 2s;*/
+	/*animation-iteration-count: infinite;
+	animation-direction: alternate;*/ /* aqui q faz ir e voltar */
+	animation: animacao-caixa 4s 2s infinite alternate;
+	-webkit-animation: animacao-caixa 4s 2s infinite alternate;
+	-moz-animation: animacao-caixa 4s 2s infinite alternate;
+	-o-animation: animacao-caixa 4s 2s infinite alternate;
+}
+

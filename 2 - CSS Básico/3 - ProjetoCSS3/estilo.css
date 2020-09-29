@@ -1,0 +1,8 @@
+body{
+	background-image: "imagens/fundo.png";
+}
+
+.texto{
+	color: red;
+	background: orange;
+}

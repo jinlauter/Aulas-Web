@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-br">
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <title>JavaScript</title>
+    <script>
+      function acao1 () {
+        alert('Evento disparado')
+      }
+
+      function acao2 () {
+        alert('Evento disparado')
+      }
+
+      function acao3 () {
+        alert('Evento disparado')
+      }
+    </script>
+  </head>
+
+  <body>
+   
+   <input onkeydown="acao1() " type="text" >
+   <br>
+   <input onkeyup="acao2() " type="text" >
+   <br>
+   <input onkeypress="acao2() " type="text">
+   <!-- onkeypress só dispara de a tecla pressionada for algum texto (n funciona com ctrl, alt, espaço) -->
+    
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   <!--  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js""></script> -->
+  </body>
+</html>

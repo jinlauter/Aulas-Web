@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="pt-br">
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <title>Callback</title>
+
+    <script>      
+
+        
+      
+    </script>
+    
+  </head>
+
+  <body>
+<script>
+var num1 = prompt('Digite um número');
+var operacao = prompt('Digite a operação');
+var num2 = prompt('Digite outro número');
+
+function calc(num1, num2, operacao){
+
+ num1 = parseFloat(num1);
+ num2 = parseFloat(num2);
+
+ var resultado = 0;
+
+ if(operacao == 'soma'){
+ resultado = num1 + num2;
+ }
+
+ if(operacao == 'subtracao'){
+ resultado = num1 - num2;
+ }
+
+ return resultado;
+}
+
+document.write('O resultado é: ' + calc(num1, num2, operacao)); 
+</script>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   <!--  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js""></script> -->
+  </body>
+</html>

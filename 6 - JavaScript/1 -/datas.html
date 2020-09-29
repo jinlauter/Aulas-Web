@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="pt-br">
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <title>JavaScript</title>
+  </head>
+
+  <script>
+
+    var data = new Date()
+
+    //adicionar remover dias
+    document.write(data.toString())
+    data.setDate(data.getDate() + 1)
+    document.write("<hr>")
+    document.write(data.toString())
+
+    document.write("<hr>")
+    document.write("<hr>")
+
+    //adicionar remover mêses
+    document.write(data.toString())
+    data.setMonth(data.getMonth() + 1)
+    document.write("<hr>")
+    document.write(data.toString())
+
+    document.write("<hr>")
+    document.write("<hr>")
+
+    //adicionar remover mêses
+    document.write(data.toString())
+    data.setFullYear(data.getFullYear() + 1)
+    document.write("<hr>")
+    document.write(data.toString())
+
+    document.write("<hr>")
+    document.write("<hr>")
+    document.write("<hr>")
+    document.write("<hr>")
+    document.write("<hr>")
+    document.write("<hr>")
+
+    var data1 = new Date(2017,0,15)
+
+    var data2 = new Date(2017, 1,23)
+
+    document.write(data1.toString())
+    document.write("<hr>")
+    document.write(data2.toString())
+
+    document.write('<br><br><br>')
+
+    //coverter datas para formato caculável
+
+    document.write(data1.getTime())
+    document.write("<hr>")
+    document.write(data2.getTime())
+
+    //1 de janeiro de 1970
+
+    document.write('<br><br><br>')
+
+    document.write(Math.abs(data1.getTime() - data2.getTime()))
+
+    document.write('<br><br><br>')
+
+    document.write(' 1 dia tem: ' + (1*24*60*60) + 'milisegundos')
+
+
+
+  </script>
+
+  <body>
+
+ 
+    
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   <!--  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js""></script> -->
+  </body>
+</html>

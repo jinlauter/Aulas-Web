@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-br">
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <title>Callback</title>
+    <script>
+      
+      function exibirArtigo(id, callbackSucesso, callbackErro)
+      {
+        //lógica: recuperar o id via requisição http 
+        if (true)
+        {
+          callbackSucesso('Funções de callback em JS','Funcções de callback são mt utilizadas...')
+        }
+        else
+        {
+          callbackErro('Erro ao recuperar')
+        }
+      }
+
+      var callbackSucesso = function (titulo,descricao) {
+        document.write('<h1>' + titulo + '</h1>')
+        document.write('<hr />')
+        document.write('<p>' + descricao + '</p>')
+
+      }
+
+      var callbackErro = function(erro) {
+        document.write('<p><b>' + erro + '</p></b>')
+      }
+
+      exibirArtigo(1,function(){},function(){})
+
+
+     
+    </script>
+  </head>
+
+  <body>
+
+
+    
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   <!--  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js""></script> -->
+  </body>
+</html>

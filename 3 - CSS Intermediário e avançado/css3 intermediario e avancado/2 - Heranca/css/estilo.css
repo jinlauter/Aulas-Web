@@ -1,0 +1,8 @@
+/*Heranca e Especificidade*/
+p {
+	color: red !important; /*important sobrepõe qualquer outra*/
+}
+
+p {
+	color: blue;
+}

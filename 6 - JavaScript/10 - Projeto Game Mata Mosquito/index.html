@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+
+	<script>
+		function iniciarJogo() {
+			var nivel = document.getElementById('nivel').value
+
+			if(nivel ==='') {
+				alert('Nível n selecionado')
+				return false
+			} 
+
+			window.location.href = "app.html?" + nivel
+
+		}
+	</script>
+
+</head>
+<body style="">
+
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<div class="d-flex justify-content-center">
+					<img src="imagens/game.png">
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col">
+				<div class="d-flex justify-content-center">
+					<div class="mb-2">
+						<select id="nivel" class="form-control">
+							<option value="">-- Selecione o nível --</option>
+							<option value="normal">-- Normal --</option>
+							<option value="dificil">-- Difícil --</option>
+							<option value="zoado">-- Zoado --</option>
+						</select>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col">
+				<div class="d-flex justify-content-center">
+					<button type="button" class="btn btn-danger btn-lg" onclick="iniciarJogo()"> Iniciar jogo</button>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+</body>
+</html>

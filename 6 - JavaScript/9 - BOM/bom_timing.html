@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript</title>
+
+  <script>
+    // setTimeout(function(){document.write('Teste')}, 3000)
+
+    //window.location.href="http://www.google.com.br"//força a troca da url
+
+    // setTimeout(<ação>,<tempo em ms>) - setTimeout executa a ação definida 1 vez apenas após o tempo em ms definido, o setInterval executa a ação definida a cada vez que o tempo em ms definido for atingido, até a instancia ser finalizada ou seja dado o clearInterval()
+
+
+    //setTimeout(function(){document.write('Teste' + '<br />')}, 2000)
+
+    //Pode ser dado o clearTimeout() para impedir que a ação definida seja executada
+
+    var i = 5
+   var x =  setInterval(function() {
+      document.write(i)
+      i--
+      if(i === 0){
+        clearInterval(x)
+      }
+    }, 8000)
+
+
+    
+  </script>
+
+</head>
+
+<body>
+  <button onclick="window.location.href='http://www.google.com.br'" >Acessar google</button>
+  <button onclick="window.location.href='http://www.facebook.com.br'">Acessar facebook</button>
+
+</body>
+
+</html>

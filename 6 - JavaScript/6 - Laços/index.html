@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fixação 1 - exercício</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+	<style>
+		.btn {
+			width: 80px;
+			height: 40px;
+			margin: 10px 10px;
+		}
+	</style>
+</head>
+
+
+<body>
+
+	<div class="container" style="margin-top: 200px;">
+		<div class="row">
+			<input type="text" id="texto" style="margin: 10px 10px">
+			<button onclick="adicionar()" class="btn btn-sm btn-dark" type="button" >Adicionar</button>
+			<button class="btn btn-sm btn-dark" type="button" onclick="ordenar()">Ordenar</button>
+
+		</div>
+	</div>
+
+<script>
+	var objetos = Array('Cadeira','Impressora','Garfo')
+
+	function adicionar() {
+
+		if(document.getElementById('texto').value == '') {
+			alert('tá vaziozão')
+			return;
+		}
+		var textoAtual = document.getElementById('texto').value
+		if (objetos.indexOf(valorAtual) != -1){
+			alert('Objeto já adicionado')
+			return;
+		}
+
+		objetos.push(textoAtual)
+
+		console.log(objetos)
+		
+		document.getElementById('texto').value = ''	
+		
+	}
+
+	function ordenar() {
+		objetos.sort()
+		console.log('Objetos ordenados:')
+		console.log(objetos)
+	}
+
+	function ordenaObjetos(a,b) {
+		return a-b
+	}
+
+</script>
+
+</body>
+</html>
